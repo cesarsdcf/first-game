@@ -28,11 +28,11 @@ const loop = setInterval(() => {
         player.style.animation = 'none'
         player.style.bottom = `${playerPosition}px`
 
-        score.innerHTML = `Sua pontuação foi ${numero}.`
+        score.innerHTML = `Sua pontuação foi ${numero}`
 
         clearInterval(loop)
     } if (obstPositionLeft === -70) {
-        contaScore ()
+        score.innerHTML = ++numero
     }
 
     console.log(obstPositionLeft)
@@ -40,14 +40,12 @@ const loop = setInterval(() => {
 }, 10)
 
 
-function contaScore () {
-    score.innerHTML = ++numero
-}
-
-
 function reset () {
     window.location.reload()
 }
+
+
+
 
 // Const com o loop que é responsável por ficar verificando os valores que precisa pra determinar se o player e o obstaculo se colidiram.
 
