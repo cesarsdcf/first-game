@@ -19,7 +19,12 @@ const loop = setInterval(() => {
     const obstPositionLeft = obstaculo.offsetLeft
     const playerPosition = +window.getComputedStyle(player).bottom.replace('px', '')
 
+    console.log(obstPositionLeft)
 
+    if (obstPositionLeft) {
+        score.innerHTML = ++numero
+
+    }
     if (obstPositionLeft <= 100 && obstPositionLeft > 0 && playerPosition < 80) {
 
         obstaculo.style.animation = 'none'
@@ -31,20 +36,16 @@ const loop = setInterval(() => {
         score.innerHTML = `Sua pontuação foi ${numero}`
 
         clearInterval(loop)
-    } if (obstPositionLeft === -70) {
-        score.innerHTML = ++numero
     }
 
     console.log(obstPositionLeft)
 
-}, 10)
+}, 30)
 
 
-function reset () {
+function reset() {
     window.location.reload()
 }
-
-
 
 
 // Const com o loop que é responsável por ficar verificando os valores que precisa pra determinar se o player e o obstaculo se colidiram.
