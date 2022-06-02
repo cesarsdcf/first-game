@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -35,9 +37,9 @@
 
 .score-div{
     position: relative;
-    background-color: pink;
+    background-color: aliceblue;
     height: 50px;
-    width: 100px;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,6 +49,7 @@
 .score-div p {
     font-size: 2em;
     color: #333;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .jump {

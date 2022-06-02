@@ -28,6 +28,7 @@ const loop = setInterval(() => {
         player.style.animation = 'none'
         player.style.bottom = `${playerPosition}px`
 
+        score.innerHTML = `Sua pontuação foi ${numero}.`
 
         clearInterval(loop)
     } if (obstPositionLeft === -70) {
