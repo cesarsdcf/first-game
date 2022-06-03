@@ -3,6 +3,8 @@ const obstaculo = document.querySelector('.obstaculo')
 const score = document.getElementById('score')
 let numero = 0
 
+// Consts que captura os elementos HTML.
+
 const jump = () => {
     player.classList.add('jump')
 
@@ -11,8 +13,7 @@ const jump = () => {
     }, 500)
 }
 
-/* Const com uma função anonima que é responsável pelo pulo do player junto com o setTimeout que remove a classe jump para poder pular novamente */
-
+/* Const com uma função anonima que é responsável pelo pulo do player junto com o setTimeout que remove a classe jump para poder pular novamente. */
 
 const loop = setInterval(() => {
 
@@ -42,12 +43,10 @@ const loop = setInterval(() => {
 
 }, 30)
 
+// Const com o loop que é responsável por ficar verificando os valores que precisa pra determinar se o player e o obstaculo se colidiram.
 
 function reset() {
     window.location.reload()
 }
-
-
-// Const com o loop que é responsável por ficar verificando os valores que precisa pra determinar se o player e o obstaculo se colidiram.
 
 document.addEventListener('keydown', jump)
