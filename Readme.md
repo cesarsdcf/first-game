@@ -8,4 +8,4 @@ Depois foi criado um setInterval que fica registrando a posição dos elementos 
 
 Para resetar o jogo eu coloquei um method chamado reload() para resetar a página sempre que clicar com o mouse na tela do jogo. 
 
-E o no final do script tem o addEventListenner que captura e alguma tecla foi precionada, acionando a funciton “jump”. 
+E no final do script tem o addEventListenner que captura se alguma tecla foi pressionada, adicionando a function “jump”. 
